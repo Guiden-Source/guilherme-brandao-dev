@@ -63,7 +63,7 @@ export default function ServiceFour() {
                   </h4>
                 </div>
               </div>
-              <div className="col-xl-7 col-lg-7">
+              <div className="col-xl-9 col-lg-9">
                 <div className="tp-service-3-content">
                   <p>{item.desc}</p>
                   <div className="tp-service-3-category">
@@ -73,23 +73,7 @@ export default function ServiceFour() {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-2">
-                <div className="tp-service-3-btn-box text-start text-md-end">
-                  <Link
-                    className="tp-btn-zikzak-sm p-relative"
-                    href="https://wa.me/5511914767026"
-                    target="_blank"
-                  >
-                    <span className="zikzak-content">
-                      Ver <br /> Detalhes
-                      <RightArrow clr="currentColor" />
-                    </span>
-                    <span>
-                      <SvgBg />
-                    </span>
-                  </Link>
-                </div>
-              </div>
+
             </div>
           </div>
         ))}
