@@ -444,7 +444,7 @@ export default function PropostaJsPocos() {
               </div>
               <div className="pp-result-item">
                 <i className="fa-light fa-magnifying-glass" />
-                <div><strong>Destaque no Google</strong>"poços Atibaia"</div>
+                <div><strong>Destaque no Google</strong>&quot;poços Atibaia&quot;</div>
               </div>
               <div className="pp-result-item">
                 <i className="fa-light fa-medal" />
