@@ -327,7 +327,7 @@ const fmt = (n: number) =>
 /* ─── Inner Component (uses useSearchParams) ──────────────────────── */
 function OrcamentoInner() {
     const params = useSearchParams();
-    const initialPlan = params.get("plano") || "landing";
+    const initialPlan = params?.get("plano") || "landing";
 
     const [step, setStep] = useState(1);
     const [selectedPlan, setSelectedPlan] = useState(initialPlan);
@@ -339,7 +339,7 @@ function OrcamentoInner() {
     const total = plan.price + addonTotal;
 
     useEffect(() => {
-        const p = params.get("plano");
+        const p = params?.get("plano");
         if (p && PLANS.find((x) => x.id === p)) setSelectedPlan(p);
     }, [params]);
 
