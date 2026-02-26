@@ -1,6 +1,7 @@
 import React from "react";
 import { UpArrow } from "../svg";
 import Link from "next/link";
+import { RightArrow } from "../svg";
 
 const pricing_data = [
   {
@@ -109,6 +110,41 @@ export default function PricingArea() {
               </div>
             </div>
           ))}
+        </div>
+        {/* Custom quote CTA */}
+        <div className="row mt-60">
+          <div className="col-xl-12">
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              gap: '24px',
+              background: 'rgba(255,255,255,0.04)',
+              border: '1px solid rgba(255,255,255,0.08)',
+              borderRadius: '16px',
+              padding: '32px 40px',
+            }}>
+              <div>
+                <h5 style={{ color: '#fff', fontSize: '20px', fontWeight: 700, marginBottom: '8px' }}>
+                  Precisa de algo personalizado?
+                </h5>
+                <p style={{ color: '#888', margin: 0, fontSize: '15px' }}>
+                  Monte seu orçamento com add-ons e envie direto pelo WhatsApp.
+                </p>
+              </div>
+              <Link
+                className="tp-btn-black-md"
+                href="/orcamento"
+                style={{ whiteSpace: 'nowrap', flexShrink: 0 }}
+              >
+                Montar Orçamento
+                <span>
+                  <RightArrow clr="#fff" />
+                </span>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -21,6 +21,7 @@ export default function FooterFour() {
                       <li><a href="#services">Serviços</a></li>
                       <li><a href="#pricing">Preços</a></li>
                       <li><a href="#contact">Contato</a></li>
+                      <li><Link href="/orcamento">Orçamento</Link></li>
                     </ul>
                   </div>
                 </div>
